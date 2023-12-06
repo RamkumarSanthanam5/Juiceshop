@@ -16,6 +16,6 @@ jobs:
             SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
         with:
           args: >
-              -Dsonar.organization=juiceshop
-              -Dsonar.projectkey=ramkumarsanthanam5
+              -Dsonar.projectkey=JuiceShop
+              -Dsonar.organization=ramkumarsanthanam5
               -Dsonar.javascript.coverage.reportPaths=coverage.xml
