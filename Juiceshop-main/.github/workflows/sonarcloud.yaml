@@ -1,7 +1,6 @@
 name: "sonarcloud_githubaction"
 on: 
-  push:
-    branches: [ "main" ]
+ workflow_dispatch:
 
 jobs:
   Demosonarcloudscan:
