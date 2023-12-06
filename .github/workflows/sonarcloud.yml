@@ -19,4 +19,3 @@ jobs:
           args: >
               -Dsonar.organization=ramkumarsanthanam5
               -Dsonar.projectkey=juiceshop
-              
