@@ -13,9 +13,9 @@ jobs:
      - name: Sonarcloud Scan
        uses: sonarsource/sonarcloud-github-action@master
        env:
-        GITHUB_TOKEN: ${{ Secrets.GIT_TOKEN }}
-        SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
-          with:
+           GITHUB_TOKEN: ${{ Secrets.GIT_TOKEN }}
+           SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
+        with:
           args: >
               -Dsonar.organization=ramkumarsanthanam5
               -Dsonar.projectkey=juiceshop
