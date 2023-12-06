@@ -14,8 +14,8 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ Secrets.GIT_TOKEN }}
             SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
-        # with:
-        #   args: >
-        #       -Dsonar.organization=ramkumarsanthanam5
-        #       -Dsonar.projectkey=JUICESHOP
-        #       -Dsonar.javascript.coverage.reportPaths=coverage.xml
+        with:
+          args: >
+              -Dsonar.organization=juiceshop
+              -Dsonar.projectkey=ramkumarsanthanam5
+              -Dsonar.javascript.coverage.reportPaths=coverage.xml
