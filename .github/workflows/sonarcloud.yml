@@ -4,18 +4,18 @@ on:
 
 jobs:
   Demosonarcloudscan:
-   runs-on: ubuntu-latest
-   steps:
-     - uses: actions/checkout@v3
-       with:
-          fetch-depth: 0
-
-     - name: Sonarcloud Scan
-       uses: sonarsource/sonarcloud-github-action@master
-       env:
-           GITHUB_TOKEN: ${{ Secrets.GIT_TOKEN }}
-           SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+            fetch-depth: 0
+      - name: Sonarcloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ Secrets.GIT_TOKEN }}
+            SONAR_TOKEN: ${{ Secrets.SONAR_TOKEN}}
         with:
           args: >
               -Dsonar.organization=ramkumarsanthanam5
               -Dsonar.projectkey=juiceshop
+              -Dsonar.javascript.coverage.reportPaths=coverage.xml
