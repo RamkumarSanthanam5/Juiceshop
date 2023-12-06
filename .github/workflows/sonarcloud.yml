@@ -17,5 +17,5 @@ jobs:
         with:
           args: >
               -Dsonar.organization=ramkumarsanthanam5
-              -Dsonar.projectkey=juiceshop
+              -Dsonar.projectkey=Juiceshop
               -Dsonar.javascript.coverage.reportPaths=coverage.xml
